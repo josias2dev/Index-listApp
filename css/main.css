@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: inherit;
+}
+
+html {
+  font-size: 10px;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+input, button {
+  outline: none;
+}
+
+.btn {
+  width: 12rem;
+  height: 2.5rem;
+  border: 1px solid #000;
+  border-radius: .3rem;
+  cursor: pointer;
+}
+
+.btn-black {
+  background-color: #000;
+  color: #FFF;
+  font-weight: 700;
+}
+
+.input {
+  width: 35rem;
+  height: 2.5rem;
+  border: 1px solid #d9d9d9;
+  border-radius: .3rem;
+  text-indent: .8rem;
+  color: #141414;
+}
+
+.input::-webkit-input-placeholder {
+  font-style: italic;
+  letter-spacing: .2rem;
+  font-weight: 500;
+  color: #d9d9d9;
+}
+
+#app {
+  height: 100%;
+  padding: 5rem;
+  background-color: #FFF;
+}
+
+#app header {
+  height: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#app header .logo {
+  background-position: center;
+  background-size: cover;
+}
+
+#app header .logo img {
+  max-width: 14rem;
+  max-height: 5rem;
+}
+/*# sourceMappingURL=main.css.map */
