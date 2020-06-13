@@ -14,6 +14,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500&display=swap"
     rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
 </head>
 
 <body>
@@ -32,25 +33,25 @@
         <div class="container">
           <div class="input-item">
             <span>Product</span>
-            <input type="text" aria-required="true" class="input">
+            <input id="inp-product" type="text" aria-required="true" class="input">
           </div>
 
           <div class="input-item">
             <span>Price</span>
-            <input type="text" aria-required="true" class="input">
+            <input id="inp-price" type="text" aria-required="true" class="input">
           </div>
 
           <div class="input-item">
             <span>Quantity</span>
-            <input type="text" aria-required="true" class="input">
+            <input id="inp-quantity" type="text" aria-required="true" class="input">
           </div>
 
           <div class="input-item">
             <span>Amount</span>
-            <input type="text" aria-required="true" class="input">
+            <input id="inp-amount" type="text" aria-required="true" class="input">
           </div>
 
-          <button class="btn btn-black">ADD</button>
+          <button id="add-button" class="btn btn-black">ADD</button>
           <img id="close" src="assets/x.svg">
         </div>
       </section>
@@ -63,64 +64,9 @@
             <th>Amount</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>ASOS Ridley High Waist</td>
-            <td>$79.49</td>
-            <td>82 Pcs</td>
-            <td>$6,518.18</td>
-          </tr>
-          <tr>
-            <td>ASOS Ridley High Waist</td>
-            <td>$79.49</td>
-            <td>82 Pcs</td>
-            <td>$6,518.18</td>
-          </tr>
-          <tr>
-            <td>ASOS Ridley High Waist</td>
-            <td>$79.49</td>
-            <td>82 Pcs</td>
-            <td>$6,518.18</td>
-          </tr>
-          <tr>
-            <td>ASOS Ridley High Waist</td>
-            <td>$79.49</td>
-            <td>82 Pcs</td>
-            <td>$6,518.18</td>
-          </tr>
-          <tr>
-            <td>ASOS Ridley High Waist</td>
-            <td>$79.49</td>
-            <td>82 Pcs</td>
-            <td>$6,518.18</td>
-          </tr>
-          <tr>
-            <td>ASOS Ridley High Waist</td>
-            <td>$79.49</td>
-            <td>82 Pcs</td>
-            <td>$6,518.18</td>
-          </tr>
-          <tr>
-            <td>ASOS Ridley High Waist</td>
-            <td>$79.49</td>
-            <td>82 Pcs</td>
-            <td>$6,518.18</td>
-          </tr>
-          <tr>
-            <td>ASOS Ridley High Waist</td>
-            <td>$79.49</td>
-            <td>82 Pcs</td>
-            <td>$6,518.18</td>
-          </tr>
-          <tr>
-            <td>ASOS Ridley High Waist</td>
-            <td>$79.49</td>
-            <td>82 Pcs</td>
-            <td>$6,518.18</td>
-          </tr>
+        <tbody id="index-body">
         </tbody>
       </table>
-
     </main>
   </div>
   <script src="js/main.js"></script>
